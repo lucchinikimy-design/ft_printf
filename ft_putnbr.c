@@ -6,7 +6,7 @@
 /*   By: klucchin <klucchin@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/19 23:50:50 by klucchin          #+#    #+#             */
-/*   Updated: 2025/11/19 23:54:55 by klucchin         ###   ########.fr       */
+/*   Updated: 2025/11/25 19:50:03 by klucchin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	ft_putnbr(int n)
 {
-	int count;
-	
+	int	count;
+
 	count = 0;
 	if (n == -2147483648)
 	{

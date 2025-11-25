@@ -6,7 +6,7 @@
 /*   By: klucchin <klucchin@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/19 23:50:18 by klucchin          #+#    #+#             */
-/*   Updated: 2025/11/20 00:10:19 by klucchin         ###   ########.fr       */
+/*   Updated: 2025/11/25 19:50:00 by klucchin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,6 @@
 
 int	ft_putchar(char c)
 {
-	write (1, &c, 1);
+	write(1, &c, 1);
 	return (1);
 }
