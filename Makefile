@@ -10,7 +10,7 @@ SRCS = ft_printf.c \
 		ft_print_ptr.c \
 		ft_putchar.c \
 		ft_putstr.c \
-		ft_putunsigned.c \
+		ft_putunsigned.c 
 
 OBJS = $(SRCS:.c=.o)
 

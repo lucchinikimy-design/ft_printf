@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   printf.h                                           :+:      :+:    :+:   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: klucchin <klucchin@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/13 17:23:41 by klucchin          #+#    #+#             */
-/*   Updated: 2025/11/19 23:54:34 by klucchin         ###   ########.fr       */
+/*   Updated: 2025/11/24 17:28:29 by klucchin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,8 @@
 
 # include <stdarg.h>
 #include <unistd.h>
-#include "ft_printf.h"
 
-int     ft_printf(const char *, ...);
+int     ft_printf(const char *format, ...);
 int     ft_putstr(char *str);
 int     ft_putchar(char c);
 int     ft_putnbr(int n);

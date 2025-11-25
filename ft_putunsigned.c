@@ -6,7 +6,7 @@
 /*   By: klucchin <klucchin@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/19 23:51:36 by klucchin          #+#    #+#             */
-/*   Updated: 2025/11/19 23:54:40 by klucchin         ###   ########.fr       */
+/*   Updated: 2025/11/24 17:06:48 by klucchin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,6 @@ int	ft_putunsigned(unsigned int n)
 	
 	count = 0;
 
-	if (n < 0)
-	{
-		write (1, "4294967294", 10);
-		return (10);
-	}
 	if (n > 9)
 	{
 		count += ft_putunsigned(n / 10);

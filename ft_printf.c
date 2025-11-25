@@ -6,7 +6,7 @@
 /*   By: klucchin <klucchin@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/19 12:03:57 by klucchin          #+#    #+#             */
-/*   Updated: 2025/11/19 23:55:03 by klucchin         ###   ########.fr       */
+/*   Updated: 2025/11/24 17:41:26 by klucchin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ static int dispatch(char c, va_list a)
 	return (0);
 }
 
-int ft_printf(const char *format, ...)
+int ft_printf(const char *format,...) 
 {
 	va_list args;
 	int count;
@@ -47,32 +47,37 @@ int ft_printf(const char *format, ...)
 		}
 		else
 			count += write(1, format, 1);
-		format++;
+		if (*format)
+			format++;
 	}
 	va_end(args);
 	return (count);
 }
 
-// #include <stdio.h>
-//
-// int	main()
-// {
-// 	char *str;
-// 	int	i;
-// 	char c;
-// 	int ret;
-// 	int hex;
-// 	unsigned int u;
-// 	void *ptr;
+#include <stdio.h>
 
-// 	ptr = 	NULL;
-// 	c = 'a';
-// 	i = -2146;
-// 	str = "hello world, how are you ?";
-// 	hex = 26;
-// 	u = -1309;
-// 	ret = ft_printf("char is = %c\n", str);
-// 	ft_printf("returned = %d\n", ret);
-// 	printf("char is = %c\n", str);
-// 	return (0);
-// }
+int	main()
+{
+	char *str;
+	int	i;
+	int d;
+	char c;
+	int ret;
+	int ret2;
+	int hex;
+	unsigned int u;
+	void *ptr;
+
+	ptr = "5";
+	c = 'a';
+	i = -42;
+	d = 42;
+	str = "hello world, how are you ?";
+	hex = 26;
+	u = -1309;
+	ret = ft_printf("Hello world %i %d\n", d, i);
+	ft_printf("returned = %d\n", ret);
+	ret2 = printf("Hello World %i %d\n", i, d);
+	printf("returned = %d\n", ret2);
+	return (0);
+}
